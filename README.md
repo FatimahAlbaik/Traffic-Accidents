@@ -4,7 +4,11 @@
 This project uses AI-based time-series models to forecast monthly traffic deaths and injuries in Saudi Arabia. The goal is to support proactive road safety planning by predicting future accident outcomes using historical government-reported data.
 
 ## Dataset
-- **Source:** Government traffic accident statistical reports (multiple files and sheets combined)
+- **Source:** Saudi Open Data Platform
+- **Files Used:**
+  - Injured and Dead in Accidents 1437 H
+  - Injured and Dead in Accidents 1438 H
+  - Injured and Dead in Accidents 1439 H
 - **Size:** 1152 rows, 20 columns
 
 ### Key Features
@@ -15,7 +19,7 @@ This project uses AI-based time-series models to forecast monthly traffic deaths
 - Lag features: deaths_lag1, injuries_lag1 (engineered)
 
 ## Data Preprocessing
-- Combined multiple files (deaths and injuries sheets) into a single dataframe
+- Combined multiple files (each file contained separate sheets for deaths and injuries) into a single dataframe
 - Added total_deaths, total_injuries, and year columns
 - Dropped region_name and month_name, replaced with region_number and month_number
 - Converted Hijri dates to Gregorian dates
@@ -50,8 +54,6 @@ This project uses AI-based time-series models to forecast monthly traffic deaths
 
 ## Future Work
 - Integrate external features such as traffic volume, weather, and enforcement data
-- Explore deep learning time-series models (e.g. Temporal Fusion Transformer)
-- Develop interactive dashboards for policymakers
 
 ## Tools Used
 Python, pandas, scikit-learn, CatBoost, LightGBM, matplotlib, seaborn, Plotly, GPT-4
