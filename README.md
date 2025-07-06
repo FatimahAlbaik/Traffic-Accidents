@@ -57,3 +57,8 @@ This project uses AI-based time-series models to forecast monthly traffic deaths
 
 ## Tools Used
 Python, pandas, scikit-learn, CatBoost, LightGBM, matplotlib, seaborn, Plotly, GPT-4
+#
+
+**Author:** Fatimah Albaik  
+**Email:** AlbaikFatimah@gmail.com
+
